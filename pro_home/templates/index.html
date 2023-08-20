@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="sign-in-con">
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <li class="fas fa-user itag"></li>
+                        <input type="text" name="username" placeholder="username" class="user-inp">
+                    </div>
+                    <div class="input-field">
+                        <li class="fas fa-envelope itag"></li>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <li class="fa fa-lock itag"></li>
+                        <input type="password" name="password" placeholder="password">
+                    </div>
+                    <input type="submit" onclick="clearInput()" id="myInput" value="Sign up" class="btn solid">
+
+                    <p class="social-text">Or sign up with social platforms</p>
+
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <li class="fas fa-user itag"></li>
+                        <input type="text" placeholder="username">
+                    </div>
+                    <div class="input-field">
+                        <li class="fa fa-lock itag"></li>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <input type="submit" onclick="clearInput()" id="myInput" value="Login" class="btn solid">
+
+                    <p class="social-text">Or sign in with social platforms</p>
+
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here ?</h3>
+                    <p>This is sign up page.......sign up and explore what you want</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="{% static 'images/rocket.svg' %}" alt="" class="image">
+
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us...</h3>
+                    <p>Welcome back cheif.... </p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="{% static 'images/desk.svg' %}" alt="" class="image">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="asset.js"></script> -->
+    <script src="{% static 'asset.js' %}"></script>
+
+</body>
+</html>

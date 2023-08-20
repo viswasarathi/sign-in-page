@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.brand{
+    font-family: 'Lemonada', cursive;
+    font-size: 2rem !important;
+}
+
+nav{
+    min-height: 10vh;
+}
+
+.signupbtn{
+    text-decoration: none;
+    color: black;
+}
+
+.signupbtn:hover{
+    text-decoration: none !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+.header{
+    /* background-color: #007bff; */
+    /* background: #0C356A; */
+    /* background: #000000; */
+    background: #080202;
+    color: #fff;
+    padding: 100px 0;
+   
+}
+.features {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+.feature-icon {
+    font-size: 3rem;
+    color: #343a40;
+}
+.cta-section {
+    background-color: #343a40;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.cta-btn {
+    margin-top: 20px;
+}
+
+button:focus{
+    outline:none !important;
+    border: none !important;
+    font-weight: 600 !important;
+}
+
+.navbar-toggler{
+     background-color: rgba(10, 44, 97, 0.475) !important; 
+     border-radius: 10px !important;
+}
